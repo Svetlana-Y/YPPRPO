@@ -1,0 +1,26 @@
+{
+  "QMainWindow": [
+    {
+      "tittle": "My Window",
+      "icon": ":/resource/img/pngwing.com.png",
+      "frameless": true,
+      "transluscentBg": true,
+      "sizeGrip": "size_grip",
+      "navigation": [
+        {
+          "minimize": "minimizeBtn",
+          "close": "closeBtn",
+          "restore": [
+            {
+              "buttonName": "restoreBtn",
+              "normalIcon": ":/resource/img/square.svg",
+              "maximizedIcon": ":/resource/img/copy.svg"
+            }
+          ],
+          "moveWindow": "headerContainer",
+          "tittleBar": "headerContainer"
+        }
+      ]
+    }
+  ]
+}
