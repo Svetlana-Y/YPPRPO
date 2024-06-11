@@ -24,24 +24,25 @@ void MainWindow::turnOffLeftWidgetButton(){
 
 }
 
-void MainWindow::on_catalogBtn_clicked()
-{
-    turnOffLeftWidgetButton();
-    ui->catalogBtn->setStyleSheet("background-color: #1f232a;");
-}
-
-
 void MainWindow::on_homeBtn_clicked()
 {
     turnOffLeftWidgetButton();
     ui->homeBtn->setStyleSheet("background-color: #1f232a;");
+    ui->centerWidget->setCurrentIndex(0);
 }
 
+void MainWindow::on_catalogBtn_clicked()
+{
+    turnOffLeftWidgetButton();
+    ui->catalogBtn->setStyleSheet("background-color: #1f232a;");
+    ui->centerWidget->setCurrentIndex(1);
+}
 
 void MainWindow::on_featuresBtn_clicked()
 {
     turnOffLeftWidgetButton();
     ui->featuresBtn->setStyleSheet("background-color: #1f232a;");
+    ui->centerWidget->setCurrentIndex(2);
 }
 
 
@@ -49,6 +50,7 @@ void MainWindow::on_settingsBtn_clicked()
 {
     turnOffLeftWidgetButton();
     ui->settingsBtn->setStyleSheet("background-color: #1f232a;");
+    ui->menuWidget->setCurrentIndex(0);
 }
 
 
@@ -57,6 +59,7 @@ void MainWindow::on_infoBtn_clicked()
 {
     turnOffLeftWidgetButton();
     ui->infoBtn->setStyleSheet("background-color: #1f232a;");
+    ui->menuWidget->setCurrentIndex(1);
 }
 
 
@@ -64,5 +67,15 @@ void MainWindow::on_helpBtn_clicked()
 {
     turnOffLeftWidgetButton();
     ui->helpBtn->setStyleSheet("background-color: #1f232a;");
+    ui->menuWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_searchBtn_clicked()
+{
+    Form *form = new Form;
+    QString myMessage = "chaterelles";
+    form->setMessage(myMessage);
+    form->show();
 }
 

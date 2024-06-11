@@ -31,7 +31,7 @@
 	background-color: #16191d;
 }
 
-leftMenuSubContainer QPushButton{
+#leftMenuSubContainer QPushButton{
 	text-aligh: left;
 	padding: 5px 10px;
 	border-top-left-radius: 10px;
@@ -68,7 +68,7 @@ leftMenuSubContainer QPushButton{
     <property name="bottomMargin">
      <number>0</number>
     </property>
-    <item alignment="Qt::AlignmentFlag::AlignLeft">
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
      <widget class="QWidget" name="leftMenuContainer" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
@@ -86,7 +86,7 @@ leftMenuSubContainer QPushButton{
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignmentFlag::AlignLeft">
+       <item alignment="Qt::AlignmentFlag::AlignHCenter">
         <widget class="QWidget" name="leftMenuSubContainer" native="true">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -105,12 +105,12 @@ leftMenuSubContainer QPushButton{
            <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>5</number>
           </property>
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignmentFlag::AlignTop">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame">
             <property name="styleSheet">
              <string notr="true">QPushButton{
@@ -172,7 +172,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignTop">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame_2">
             <property name="enabled">
              <bool>true</bool>
@@ -512,7 +512,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
            </widget>
           </item>
           <item>
-           <widget class="QStackedWidget" name="stackedWidget">
+           <widget class="QStackedWidget" name="menuWidget">
             <widget class="QWidget" name="page">
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
@@ -868,7 +868,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
            <widget class="QWidget" name="mainContentsContainer" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_15">
              <item>
-              <widget class="QStackedWidget" name="stackedWidget_3">
+              <widget class="QStackedWidget" name="centerWidget">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
                <widget class="QWidget" name="page_6">
                 <layout class="QVBoxLayout" name="verticalLayout_16">
                  <item>
@@ -883,6 +886,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignmentFlag::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="searchBtn">
+                   <property name="text">
+                    <string>Search</string>
                    </property>
                   </widget>
                  </item>

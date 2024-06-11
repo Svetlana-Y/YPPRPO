@@ -1,6 +1,7 @@
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += sql
 
 CONFIG += c++17
 
@@ -9,13 +10,19 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    big_image.cpp \
+    form.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    big_image.h \
+    form.h \
     mainwindow.h
 
 FORMS += \
+    big_image.ui \
+    form.ui \
     mainwindow.ui
 
 
@@ -27,5 +34,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     resource.qrc
 
-DISTFILES += \
-    style.json

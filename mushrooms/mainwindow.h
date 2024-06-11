@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <form.h>
+#include <big_image.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -30,6 +32,8 @@ private slots:
     void on_infoBtn_clicked();
 
     void on_helpBtn_clicked();
+
+    void on_searchBtn_clicked();
 
 private:
     Ui::MainWindow *ui;

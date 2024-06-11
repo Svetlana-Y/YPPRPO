@@ -55,7 +55,7 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *label;
     QPushButton *pushButton;
-    QStackedWidget *stackedWidget;
+    QStackedWidget *menuWidget;
     QWidget *page;
     QVBoxLayout *verticalLayout_7;
     QLabel *label_2;
@@ -86,10 +86,11 @@ public:
     QHBoxLayout *horizontalLayout_8;
     QWidget *mainContentsContainer;
     QVBoxLayout *verticalLayout_15;
-    QStackedWidget *stackedWidget_3;
+    QStackedWidget *centerWidget;
     QWidget *page_6;
     QVBoxLayout *verticalLayout_16;
     QLabel *label_10;
+    QPushButton *searchBtn;
     QWidget *page_7;
     QVBoxLayout *verticalLayout_17;
     QLabel *label_11;
@@ -134,7 +135,7 @@ public:
 "	background-color: #16191d;\n"
 "}\n"
 "\n"
-"leftMenuSubContainer QPushButton{\n"
+"#leftMenuSubContainer QPushButton{\n"
 "	text-aligh: left;\n"
 "	padding: 5px 10px;\n"
 "	border-top-left-radius: 10px;\n"
@@ -175,7 +176,7 @@ public:
         verticalLayout_2 = new QVBoxLayout(leftMenuSubContainer);
         verticalLayout_2->setSpacing(0);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(5, 0, 0, 0);
+        verticalLayout_2->setContentsMargins(5, 0, 5, 0);
         frame = new QFrame(leftMenuSubContainer);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setStyleSheet(QString::fromUtf8("QPushButton{\n"
@@ -205,7 +206,7 @@ public:
         horizontalLayout_2->addWidget(menuBtn, 0, Qt::AlignmentFlag::AlignLeft);
 
 
-        verticalLayout_2->addWidget(frame, 0, Qt::AlignmentFlag::AlignTop);
+        verticalLayout_2->addWidget(frame, 0, Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop);
 
         frame_2 = new QFrame(leftMenuSubContainer);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
@@ -263,7 +264,7 @@ public:
         verticalLayout_3->addWidget(featuresBtn, 0, Qt::AlignmentFlag::AlignLeft);
 
 
-        verticalLayout_2->addWidget(frame_2, 0, Qt::AlignmentFlag::AlignTop);
+        verticalLayout_2->addWidget(frame_2, 0, Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop);
 
         verticalSpacer = new QSpacerItem(20, 50, QSizePolicy::Policy::Expanding, QSizePolicy::Minimum);
 
@@ -316,10 +317,10 @@ public:
         verticalLayout_2->addWidget(frame_3, 0, Qt::AlignmentFlag::AlignBottom);
 
 
-        verticalLayout->addWidget(leftMenuSubContainer, 0, Qt::AlignmentFlag::AlignLeft);
+        verticalLayout->addWidget(leftMenuSubContainer, 0, Qt::AlignmentFlag::AlignHCenter);
 
 
-        horizontalLayout->addWidget(leftMenuContainer, 0, Qt::AlignmentFlag::AlignLeft);
+        horizontalLayout->addWidget(leftMenuContainer, 0, Qt::AlignmentFlag::AlignHCenter);
 
         centerMenuContainer = new QWidget(centralwidget);
         centerMenuContainer->setObjectName(QString::fromUtf8("centerMenuContainer"));
@@ -364,8 +365,8 @@ public:
 
         verticalLayout_6->addWidget(frame_4, 0, Qt::AlignmentFlag::AlignTop);
 
-        stackedWidget = new QStackedWidget(centerMenuSubContainer);
-        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        menuWidget = new QStackedWidget(centerMenuSubContainer);
+        menuWidget->setObjectName(QString::fromUtf8("menuWidget"));
         page = new QWidget();
         page->setObjectName(QString::fromUtf8("page"));
         verticalLayout_7 = new QVBoxLayout(page);
@@ -379,7 +380,7 @@ public:
 
         verticalLayout_7->addWidget(label_2);
 
-        stackedWidget->addWidget(page);
+        menuWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
         verticalLayout_8 = new QVBoxLayout(page_2);
@@ -391,7 +392,7 @@ public:
 
         verticalLayout_8->addWidget(label_3);
 
-        stackedWidget->addWidget(page_2);
+        menuWidget->addWidget(page_2);
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
         verticalLayout_9 = new QVBoxLayout(page_3);
@@ -403,9 +404,9 @@ public:
 
         verticalLayout_9->addWidget(label_4);
 
-        stackedWidget->addWidget(page_3);
+        menuWidget->addWidget(page_3);
 
-        verticalLayout_6->addWidget(stackedWidget);
+        verticalLayout_6->addWidget(menuWidget);
 
 
         verticalLayout_5->addWidget(centerMenuSubContainer);
@@ -548,8 +549,8 @@ public:
         mainContentsContainer->setObjectName(QString::fromUtf8("mainContentsContainer"));
         verticalLayout_15 = new QVBoxLayout(mainContentsContainer);
         verticalLayout_15->setObjectName(QString::fromUtf8("verticalLayout_15"));
-        stackedWidget_3 = new QStackedWidget(mainContentsContainer);
-        stackedWidget_3->setObjectName(QString::fromUtf8("stackedWidget_3"));
+        centerWidget = new QStackedWidget(mainContentsContainer);
+        centerWidget->setObjectName(QString::fromUtf8("centerWidget"));
         page_6 = new QWidget();
         page_6->setObjectName(QString::fromUtf8("page_6"));
         verticalLayout_16 = new QVBoxLayout(page_6);
@@ -561,7 +562,12 @@ public:
 
         verticalLayout_16->addWidget(label_10);
 
-        stackedWidget_3->addWidget(page_6);
+        searchBtn = new QPushButton(page_6);
+        searchBtn->setObjectName(QString::fromUtf8("searchBtn"));
+
+        verticalLayout_16->addWidget(searchBtn);
+
+        centerWidget->addWidget(page_6);
         page_7 = new QWidget();
         page_7->setObjectName(QString::fromUtf8("page_7"));
         verticalLayout_17 = new QVBoxLayout(page_7);
@@ -573,7 +579,7 @@ public:
 
         verticalLayout_17->addWidget(label_11);
 
-        stackedWidget_3->addWidget(page_7);
+        centerWidget->addWidget(page_7);
         page_8 = new QWidget();
         page_8->setObjectName(QString::fromUtf8("page_8"));
         verticalLayout_18 = new QVBoxLayout(page_8);
@@ -585,9 +591,9 @@ public:
 
         verticalLayout_18->addWidget(label_12);
 
-        stackedWidget_3->addWidget(page_8);
+        centerWidget->addWidget(page_8);
 
-        verticalLayout_15->addWidget(stackedWidget_3);
+        verticalLayout_15->addWidget(centerWidget);
 
 
         horizontalLayout_8->addWidget(mainContentsContainer);
@@ -673,6 +679,9 @@ public:
 
         retranslateUi(MainWindow);
 
+        centerWidget->setCurrentIndex(0);
+
+
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
@@ -738,6 +747,7 @@ public:
 #endif // QT_CONFIG(tooltip)
         closeBtn->setText(QString());
         label_10->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
+        searchBtn->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
         label_11->setText(QCoreApplication::translate("MainWindow", "Catalog", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "Features", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Right Menu", nullptr));
