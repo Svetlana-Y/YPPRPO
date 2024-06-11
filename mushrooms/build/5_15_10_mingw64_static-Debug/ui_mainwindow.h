@@ -17,6 +17,8 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
@@ -58,7 +60,13 @@ public:
     QStackedWidget *menuWidget;
     QWidget *page;
     QVBoxLayout *verticalLayout_7;
+    QFrame *frame_9;
+    QVBoxLayout *verticalLayout_19;
+    QLabel *label_13;
+    QRadioButton *russiaSettingBtn;
+    QRadioButton *englishSettingBtn;
     QLabel *label_2;
+    QPushButton *setBtn;
     QWidget *page_2;
     QVBoxLayout *verticalLayout_8;
     QLabel *label_3;
@@ -93,7 +101,29 @@ public:
     QPushButton *searchBtn;
     QWidget *page_7;
     QVBoxLayout *verticalLayout_17;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QVBoxLayout *verticalLayout_20;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_14;
+    QLabel *label_16;
+    QPushButton *pushButton_3;
+    QWidget *widget_5;
+    QHBoxLayout *horizontalLayout_13;
+    QLabel *label_15;
+    QPushButton *pushButton_4;
+    QWidget *widget_3;
+    QHBoxLayout *horizontalLayout_12;
+    QLabel *label_14;
+    QPushButton *pushButton_8;
+    QWidget *widget_4;
+    QHBoxLayout *horizontalLayout_10;
     QLabel *label_11;
+    QPushButton *pushButton_2;
+    QWidget *widget_2;
+    QHBoxLayout *horizontalLayout_11;
+    QLabel *label_17;
+    QPushButton *pushButton_9;
     QWidget *page_8;
     QVBoxLayout *verticalLayout_18;
     QLabel *label_12;
@@ -193,13 +223,12 @@ public:
         menuBtn = new QPushButton(frame);
         menuBtn->setObjectName(QString::fromUtf8("menuBtn"));
         menuBtn->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"	background-color: #ffffff;\n"
 "	height: 45px;\n"
 "}\n"
 "\n"
 "QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/resource/img/align-justify.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/resource/img/white-align-justify.png"), QSize(), QIcon::Normal, QIcon::Off);
         menuBtn->setIcon(icon);
         menuBtn->setIconSize(QSize(24, 24));
 
@@ -231,7 +260,7 @@ public:
         homeBtn->setStyleSheet(QString::fromUtf8("background-color: #1f232a;\n"
 ""));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/resource/img/home.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/resource/img/white-home-50.png"), QSize(), QIcon::Normal, QIcon::Off);
         homeBtn->setIcon(icon1);
         homeBtn->setIconSize(QSize(24, 24));
 
@@ -246,7 +275,7 @@ public:
         catalogBtn->setSizePolicy(sizePolicy2);
         catalogBtn->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/resource/img/book-open.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/resource/img/white-book.png"), QSize(), QIcon::Normal, QIcon::Off);
         catalogBtn->setIcon(icon2);
         catalogBtn->setIconSize(QSize(24, 24));
 
@@ -257,7 +286,7 @@ public:
         featuresBtn->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}\n"
 ""));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/resource/img/eye.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/resource/img/white-eye.png"), QSize(), QIcon::Normal, QIcon::Off);
         featuresBtn->setIcon(icon3);
         featuresBtn->setIconSize(QSize(24, 24));
 
@@ -287,7 +316,7 @@ public:
         settingsBtn->setObjectName(QString::fromUtf8("settingsBtn"));
         settingsBtn->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/resource/img/settings.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QString::fromUtf8(":/resource/img/white-setting.png"), QSize(), QIcon::Normal, QIcon::Off);
         settingsBtn->setIcon(icon4);
         settingsBtn->setIconSize(QSize(24, 24));
 
@@ -297,7 +326,7 @@ public:
         infoBtn->setObjectName(QString::fromUtf8("infoBtn"));
         infoBtn->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/resource/img/info.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QString::fromUtf8(":/resource/img/white-info.png"), QSize(), QIcon::Normal, QIcon::Off);
         infoBtn->setIcon(icon5);
         infoBtn->setIconSize(QSize(24, 24));
 
@@ -307,9 +336,9 @@ public:
         helpBtn->setObjectName(QString::fromUtf8("helpBtn"));
         helpBtn->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/resource/img/help-circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/resource/img/white-question.png"), QSize(), QIcon::Normal, QIcon::Off);
         helpBtn->setIcon(icon6);
-        helpBtn->setIconSize(QSize(24, 24));
+        helpBtn->setIconSize(QSize(26, 26));
 
         verticalLayout_4->addWidget(helpBtn, 0, Qt::AlignmentFlag::AlignLeft);
 
@@ -324,6 +353,7 @@ public:
 
         centerMenuContainer = new QWidget(centralwidget);
         centerMenuContainer->setObjectName(QString::fromUtf8("centerMenuContainer"));
+        centerMenuContainer->setEnabled(true);
         centerMenuContainer->setMinimumSize(QSize(200, 0));
         verticalLayout_5 = new QVBoxLayout(centerMenuContainer);
         verticalLayout_5->setSpacing(0);
@@ -356,7 +386,7 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton QToolTip {background-color: #1f232a;}"));
         QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/resource/img/x-circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QString::fromUtf8(":/resource/img/white-circled-x.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton->setIcon(icon7);
         pushButton->setIconSize(QSize(24, 24));
 
@@ -371,6 +401,45 @@ public:
         page->setObjectName(QString::fromUtf8("page"));
         verticalLayout_7 = new QVBoxLayout(page);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        frame_9 = new QFrame(page);
+        frame_9->setObjectName(QString::fromUtf8("frame_9"));
+        frame_9->setStyleSheet(QString::fromUtf8("#frame_9 {\n"
+"  border: 2px solid #1f232a; \n"
+"  padding: 8 10 8 8;\n"
+"  border-radius: 10px;\n"
+"}"));
+        frame_9->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Shadow::Raised);
+        verticalLayout_19 = new QVBoxLayout(frame_9);
+        verticalLayout_19->setSpacing(20);
+        verticalLayout_19->setObjectName(QString::fromUtf8("verticalLayout_19"));
+        verticalLayout_19->setContentsMargins(0, 0, 0, 5);
+        label_13 = new QLabel(frame_9);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        sizePolicy1.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
+        label_13->setSizePolicy(sizePolicy1);
+        label_13->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
+        label_13->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        verticalLayout_19->addWidget(label_13);
+
+        russiaSettingBtn = new QRadioButton(frame_9);
+        russiaSettingBtn->setObjectName(QString::fromUtf8("russiaSettingBtn"));
+        russiaSettingBtn->setStyleSheet(QString::fromUtf8(""));
+
+        verticalLayout_19->addWidget(russiaSettingBtn);
+
+        englishSettingBtn = new QRadioButton(frame_9);
+        englishSettingBtn->setObjectName(QString::fromUtf8("englishSettingBtn"));
+        englishSettingBtn->setTabletTracking(false);
+        englishSettingBtn->setAutoFillBackground(false);
+        englishSettingBtn->setChecked(true);
+
+        verticalLayout_19->addWidget(englishSettingBtn);
+
+
+        verticalLayout_7->addWidget(frame_9, 0, Qt::AlignmentFlag::AlignTop);
+
         label_2 = new QLabel(page);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         QFont font;
@@ -379,6 +448,17 @@ public:
         label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout_7->addWidget(label_2);
+
+        setBtn = new QPushButton(page);
+        setBtn->setObjectName(QString::fromUtf8("setBtn"));
+        setBtn->setMinimumSize(QSize(0, 35));
+        setBtn->setStyleSheet(QString::fromUtf8("#setBtn {\n"
+"  border: 2px solid #1f232a; \n"
+"  padding: 8 10 8 8;\n"
+"  border-radius: 10px;\n"
+"}"));
+
+        verticalLayout_7->addWidget(setBtn);
 
         menuWidget->addWidget(page);
         page_2 = new QWidget();
@@ -477,18 +557,18 @@ public:
         pushButton_6 = new QPushButton(frame_6);
         pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
         QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/resource/img/more-horizontal.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QString::fromUtf8(":/resource/img/white-more.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_6->setIcon(icon8);
-        pushButton_6->setIconSize(QSize(24, 24));
+        pushButton_6->setIconSize(QSize(29, 29));
 
         horizontalLayout_6->addWidget(pushButton_6);
 
         pushButton_5 = new QPushButton(frame_6);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/resource/img/user.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QString::fromUtf8(":/resource/img/white-person.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_5->setIcon(icon9);
-        pushButton_5->setIconSize(QSize(24, 24));
+        pushButton_5->setIconSize(QSize(29, 29));
 
         horizontalLayout_6->addWidget(pushButton_5);
 
@@ -506,7 +586,7 @@ public:
         minimizeBtn = new QPushButton(frame_7);
         minimizeBtn->setObjectName(QString::fromUtf8("minimizeBtn"));
         QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/resource/img/minus.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QString::fromUtf8(":/resource/img/white-subtract.png"), QSize(), QIcon::Normal, QIcon::Off);
         minimizeBtn->setIcon(icon10);
         minimizeBtn->setIconSize(QSize(24, 24));
 
@@ -514,19 +594,20 @@ public:
 
         restoreBtn = new QPushButton(frame_7);
         restoreBtn->setObjectName(QString::fromUtf8("restoreBtn"));
+        restoreBtn->setStyleSheet(QString::fromUtf8(""));
         QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/resource/img/square.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon11.addFile(QString::fromUtf8(":/resource/img/white-square.png"), QSize(), QIcon::Normal, QIcon::Off);
         restoreBtn->setIcon(icon11);
-        restoreBtn->setIconSize(QSize(24, 24));
+        restoreBtn->setIconSize(QSize(22, 22));
 
         horizontalLayout_4->addWidget(restoreBtn);
 
         closeBtn = new QPushButton(frame_7);
         closeBtn->setObjectName(QString::fromUtf8("closeBtn"));
         QIcon icon12;
-        icon12.addFile(QString::fromUtf8(":/resource/img/x.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon12.addFile(QString::fromUtf8(":/resource/img/white-cross.png"), QSize(), QIcon::Normal, QIcon::Off);
         closeBtn->setIcon(icon12);
-        closeBtn->setIconSize(QSize(24, 24));
+        closeBtn->setIconSize(QSize(37, 37));
 
         horizontalLayout_4->addWidget(closeBtn);
 
@@ -572,12 +653,107 @@ public:
         page_7->setObjectName(QString::fromUtf8("page_7"));
         verticalLayout_17 = new QVBoxLayout(page_7);
         verticalLayout_17->setObjectName(QString::fromUtf8("verticalLayout_17"));
-        label_11 = new QLabel(page_7);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setFont(font);
-        label_11->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        scrollArea = new QScrollArea(page_7);
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setStyleSheet(QString::fromUtf8("#scrollArea {\n"
+"  border: 1px solid #fff; \n"
+"  padding: 8 10 8 8;\n"
+"  border-radius: 10px;\n"
+"}"));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 445, 373));
+        verticalLayout_20 = new QVBoxLayout(scrollAreaWidgetContents);
+        verticalLayout_20->setObjectName(QString::fromUtf8("verticalLayout_20"));
+        widget = new QWidget(scrollAreaWidgetContents);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        horizontalLayout_14 = new QHBoxLayout(widget);
+        horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
+        label_16 = new QLabel(widget);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
 
-        verticalLayout_17->addWidget(label_11);
+        horizontalLayout_14->addWidget(label_16);
+
+        pushButton_3 = new QPushButton(widget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+
+        horizontalLayout_14->addWidget(pushButton_3);
+
+
+        verticalLayout_20->addWidget(widget);
+
+        widget_5 = new QWidget(scrollAreaWidgetContents);
+        widget_5->setObjectName(QString::fromUtf8("widget_5"));
+        horizontalLayout_13 = new QHBoxLayout(widget_5);
+        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
+        label_15 = new QLabel(widget_5);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+
+        horizontalLayout_13->addWidget(label_15);
+
+        pushButton_4 = new QPushButton(widget_5);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+
+        horizontalLayout_13->addWidget(pushButton_4);
+
+
+        verticalLayout_20->addWidget(widget_5);
+
+        widget_3 = new QWidget(scrollAreaWidgetContents);
+        widget_3->setObjectName(QString::fromUtf8("widget_3"));
+        horizontalLayout_12 = new QHBoxLayout(widget_3);
+        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
+        label_14 = new QLabel(widget_3);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        horizontalLayout_12->addWidget(label_14);
+
+        pushButton_8 = new QPushButton(widget_3);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+
+        horizontalLayout_12->addWidget(pushButton_8);
+
+
+        verticalLayout_20->addWidget(widget_3);
+
+        widget_4 = new QWidget(scrollAreaWidgetContents);
+        widget_4->setObjectName(QString::fromUtf8("widget_4"));
+        horizontalLayout_10 = new QHBoxLayout(widget_4);
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        label_11 = new QLabel(widget_4);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+
+        horizontalLayout_10->addWidget(label_11);
+
+        pushButton_2 = new QPushButton(widget_4);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+
+        horizontalLayout_10->addWidget(pushButton_2);
+
+
+        verticalLayout_20->addWidget(widget_4);
+
+        widget_2 = new QWidget(scrollAreaWidgetContents);
+        widget_2->setObjectName(QString::fromUtf8("widget_2"));
+        horizontalLayout_11 = new QHBoxLayout(widget_2);
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        label_17 = new QLabel(widget_2);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+
+        horizontalLayout_11->addWidget(label_17);
+
+        pushButton_9 = new QPushButton(widget_2);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+
+        horizontalLayout_11->addWidget(pushButton_9);
+
+
+        verticalLayout_20->addWidget(widget_2);
+
+        scrollArea->setWidget(scrollAreaWidgetContents);
+
+        verticalLayout_17->addWidget(scrollArea);
 
         centerWidget->addWidget(page_7);
         page_8 = new QWidget();
@@ -679,7 +855,9 @@ public:
 
         retranslateUi(MainWindow);
 
-        centerWidget->setCurrentIndex(0);
+        menuWidget->setCurrentIndex(0);
+        centerWidget->setCurrentIndex(1);
+        stackedWidget_2->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -716,12 +894,16 @@ public:
         helpBtn->setToolTip(QCoreApplication::translate("MainWindow", "Help", nullptr));
 #endif // QT_CONFIG(tooltip)
         helpBtn->setText(QCoreApplication::translate("MainWindow", "  Help", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "More Menu", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Menu", nullptr));
 #if QT_CONFIG(tooltip)
         pushButton->setToolTip(QCoreApplication::translate("MainWindow", "Close Menu", nullptr));
 #endif // QT_CONFIG(tooltip)
         pushButton->setText(QString());
+        label_13->setText(QCoreApplication::translate("MainWindow", "Change language", nullptr));
+        russiaSettingBtn->setText(QCoreApplication::translate("MainWindow", "      Russian", nullptr));
+        englishSettingBtn->setText(QCoreApplication::translate("MainWindow", "      English", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        setBtn->setText(QCoreApplication::translate("MainWindow", "Set", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Information", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         label_5->setText(QString());
@@ -748,9 +930,18 @@ public:
         closeBtn->setText(QString());
         label_10->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
         searchBtn->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
-        label_11->setText(QCoreApplication::translate("MainWindow", "Catalog", nullptr));
+        label_16->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label_15->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label_14->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label_11->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label_17->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "Features", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "Right Menu", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", " Menu", nullptr));
 #if QT_CONFIG(tooltip)
         pushButton_7->setToolTip(QCoreApplication::translate("MainWindow", "Close Menu", nullptr));
 #endif // QT_CONFIG(tooltip)

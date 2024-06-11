@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
 #include <form.h>
 #include <big_image.h>
 
@@ -21,6 +22,11 @@ public:
 
     void turnOffLeftWidgetButton();
 
+    bool visibleCenterMenuContainer = false;
+
+    int opacity;
+
+
 private slots:
     void on_catalogBtn_clicked();
     void on_homeBtn_clicked();
@@ -35,7 +41,15 @@ private slots:
 
     void on_searchBtn_clicked();
 
+    void on_closeBtn_clicked();
+
+    void on_menuBtn_clicked();
+
+    void on_setBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QTimer *timer;
+
 };
 #endif // MAINWINDOW_H

@@ -288,6 +288,20 @@
         <file>img/zoom-in.svg</file>
         <file>img/zoom-out.svg</file>
         <file>img/pngwing.com.png</file>
+        <file>img/white-align-justify.png</file>
+        <file>img/white-book.png</file>
+        <file>img/white-cross.png</file>
+        <file>img/white-eye.png</file>
+        <file>img/white-home.svg</file>
+        <file>img/white-info.png</file>
+        <file>img/white-more.png</file>
+        <file>img/white-person.png</file>
+        <file>img/white-question.png</file>
+        <file>img/white-setting.png</file>
+        <file>img/white-square.png</file>
+        <file>img/white-subtract.png</file>
+        <file>img/white-circled-x.png</file>
+        <file>img/white-home-50.png</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>

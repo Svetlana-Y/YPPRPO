@@ -118,6 +118,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_resource.cpp
 release/qrc_resource.cpp: ../../resource.qrc \
 		C:/msys64/mingw64/qt5-static/bin/rcc.exe \
+		../../img/white-subtract.png \
 		../../img/link.svg \
 		../../img/phone-missed.svg \
 		../../img/minimize-2.svg \
@@ -133,6 +134,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/heart.svg \
 		../../img/compass.svg \
 		../../img/file-minus.svg \
+		../../img/white-more.png \
 		../../img/tool.svg \
 		../../img/percent.svg \
 		../../img/tag.svg \
@@ -158,6 +160,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/skip-forward.svg \
 		../../img/edit-2.svg \
 		../../img/check-circle.svg \
+		../../img/white-eye.png \
 		../../img/log-in.svg \
 		../../img/navigation.svg \
 		../../img/package.svg \
@@ -189,10 +192,12 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/at-sign.svg \
 		../../img/rss.svg \
 		../../img/arrow-right.svg \
+		../../img/white-info.png \
 		../../img/feather.svg \
 		../../img/facebook.svg \
 		../../img/plus-circle.svg \
 		../../img/command.svg \
+		../../img/white-setting.png \
 		../../img/thumbs-up.svg \
 		../../img/arrow-down-right.svg \
 		../../img/battery-charging.svg \
@@ -201,6 +206,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/image.svg \
 		../../img/minimize.svg \
 		../../img/corner-left-down.svg \
+		../../img/white-circled-x.png \
 		../../img/wifi.svg \
 		../../img/list.svg \
 		../../img/chevrons-left.svg \
@@ -221,6 +227,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/corner-up-right.svg \
 		../../img/play.svg \
 		../../img/corner-down-right.svg \
+		../../img/white-cross.png \
 		../../img/unlock.svg \
 		../../img/tv.svg \
 		../../img/folder-minus.svg \
@@ -250,6 +257,8 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/sliders.svg \
 		../../img/x-circle.svg \
 		../../img/link-2.svg \
+		../../img/white-align-justify.png \
+		../../img/white-home-50.png \
 		../../img/plus-square.svg \
 		../../img/rotate-cw.svg \
 		../../img/phone-outgoing.svg \
@@ -262,6 +271,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/move.svg \
 		../../img/crosshair.svg \
 		../../img/power.svg \
+		../../img/white-square.png \
 		../../img/alert-circle.svg \
 		../../img/bold.svg \
 		../../img/twitch.svg \
@@ -278,6 +288,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/flag.svg \
 		../../img/watch.svg \
 		../../img/slack.svg \
+		../../img/white-question.png \
 		../../img/hash.svg \
 		../../img/award.svg \
 		../../img/check-square.svg \
@@ -288,6 +299,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/more-horizontal.svg \
 		../../img/phone-incoming.svg \
 		../../img/codesandbox.svg \
+		../../img/white-home.svg \
 		../../img/arrow-up-circle.svg \
 		../../img/minus-circle.svg \
 		../../img/printer.svg \
@@ -321,6 +333,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/message-circle.svg \
 		../../img/refresh-cw.svg \
 		../../img/wifi-off.svg \
+		../../img/white-person.png \
 		../../img/arrow-left.svg \
 		../../img/chevron-up.svg \
 		../../img/edit-3.svg \
@@ -388,6 +401,7 @@ release/qrc_resource.cpp: ../../resource.qrc \
 		../../img/frown.svg \
 		../../img/bar-chart.svg \
 		../../img/alert-triangle.svg \
+		../../img/white-book.png \
 		../../img/file.svg \
 		../../img/map-pin.svg \
 		../../img/settings.svg \
@@ -744,6 +758,13 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
+		../../form.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsql-config.h \
+		../../big_image.h \
 		release/moc_predefs.h \
 		C:/msys64/mingw64/qt5-static/bin/moc.exe
 	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Users/Svetlana/QT/mushrooms/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\mainwindow.h -o release\moc_mainwindow.cpp
@@ -1132,6 +1153,13 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
+		../../form.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsql-config.h \
+		../../big_image.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QApplication \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qapplication.h \
 		C:/msys64/mingw64/qt5-static/include/QtCore/qcoreapplication.h \
@@ -1248,6 +1276,13 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
+		../../form.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsql-config.h \
+		../../big_image.h \
 		ui_mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtCore/QVariant \
 		C:/msys64/mingw64/qt5-static/include/QtGui/QIcon \
@@ -1273,8 +1308,7 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QSpacerItem \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QStackedWidget \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qstackedwidget.h \
-		C:/msys64/mingw64/qt5-static/include/QtWidgets/QVBoxLayout \
-		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
 release/mushrooms_plugin_import.o: C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp 

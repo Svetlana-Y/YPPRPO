@@ -6,16 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>639</width>
-    <height>524</height>
+    <width>623</width>
+    <height>576</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QGridLayout" name="gridLayout_5">
    <item row="0" column="0">
     <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -24,44 +30,57 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>615</width>
-        <height>500</height>
+        <width>599</width>
+        <height>552</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
         <widget class="QWidget" name="widget" native="true">
-         <layout class="QGridLayout" name="gridLayout_2">
-          <item row="1" column="0" colspan="2">
-           <widget class="QTextBrowser" name="textBrowser"/>
-          </item>
-          <item row="0" column="0">
-           <widget class="QFrame" name="frame_3">
-            <property name="frameShape">
-             <enum>QFrame::Shape::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Shadow::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
-              <widget class="QLabel" name="label">
-               <property name="text">
-                <string>Название</string>
+              <widget class="QFrame" name="frame_3">
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
                </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>Название</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string>Eatable</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_3">
+              <widget class="QLabel" name="label_2">
                <property name="text">
-                <string>Eatable</string>
+                <string>Image</string>
                </property>
               </widget>
              </item>
             </layout>
            </widget>
           </item>
-          <item row="3" column="0" colspan="2">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser"/>
+          </item>
+          <item>
            <widget class="QFrame" name="frame">
             <property name="layoutDirection">
              <enum>Qt::LayoutDirection::LeftToRight</enum>
@@ -72,8 +91,8 @@
             <property name="frameShadow">
              <enum>QFrame::Shadow::Raised</enum>
             </property>
-            <layout class="QGridLayout" name="gridLayout_3">
-             <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
               <widget class="QPushButton" name="pushButton">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
@@ -83,8 +102,8 @@
                </property>
               </widget>
              </item>
-             <item row="2" column="3">
-              <widget class="QPushButton" name="pushButton_4">
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
@@ -93,7 +112,7 @@
                </property>
               </widget>
              </item>
-             <item row="2" column="2">
+             <item>
               <widget class="QPushButton" name="pushButton_3">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
@@ -103,8 +122,8 @@
                </property>
               </widget>
              </item>
-             <item row="2" column="1">
-              <widget class="QPushButton" name="pushButton_2">
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
@@ -116,14 +135,7 @@
             </layout>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Image</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0" colspan="2">
+          <item>
            <widget class="QFrame" name="frame_2">
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
@@ -131,18 +143,8 @@
             <property name="frameShadow">
              <enum>QFrame::Shadow::Raised</enum>
             </property>
-            <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="4">
-              <widget class="QPushButton" name="pushButton_7">
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
               <widget class="QPushButton" name="pushButton_6">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
@@ -152,8 +154,8 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="5">
-              <widget class="QPushButton" name="pushButton_8">
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
@@ -162,8 +164,18 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="3">
-              <widget class="QPushButton" name="pushButton_5">
+             <item>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_8">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
