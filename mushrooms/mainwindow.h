@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSqlDatabase>
+#include <form.h>
+#include <big_image.h>.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,21 +20,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void turnOffLeftWidgetButton();
-
 private slots:
-    void on_catalogBtn_clicked();
-    void on_homeBtn_clicked();
-
-    void on_featuresBtn_clicked();
-
-    void on_settingsBtn_clicked();
-
-    void on_infoBtn_clicked();
-
-    void on_helpBtn_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    Form *form;
+    Big_Image *big_image;
 };
 #endif // MAINWINDOW_H
