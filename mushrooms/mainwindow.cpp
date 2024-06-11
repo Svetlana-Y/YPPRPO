@@ -4,6 +4,11 @@
 #include <QPropertyAnimation>
 #include <QWidget>
 #include <QTimer>
+#include <QString>
+
+#include "create_database.cpp"
+
+QString language="Eng";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -81,6 +86,10 @@ void MainWindow::on_helpBtn_clicked()
 
 void MainWindow::on_searchBtn_clicked()
 {
+
+    createDatabase("mashrooms2.db");
+    insertData();
+
     Form *form = new Form;
     QString myMessage = "chaterelles";
     form->setMessage(myMessage);
@@ -134,6 +143,7 @@ void MainWindow::on_menuBtn_clicked()
 void MainWindow::on_setBtn_clicked()
 {
     if(ui->russiaSettingBtn->isChecked()){
+        language = "Rus";
         ui->label->setText("Меню");
         ui->label_2->setText("Параметры");
         ui->label_3->setText("Информация");
@@ -157,6 +167,7 @@ void MainWindow::on_setBtn_clicked()
         ui->englishSettingBtn->setText("Английский");
     }
     else{
+        language = "Eng";
         ui->label->setText("Menu");
         ui->label_2->setText("Settings");
         ui->label_3->setText("Information");

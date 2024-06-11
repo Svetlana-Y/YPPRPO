@@ -17,7 +17,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
-#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -38,14 +37,18 @@ public:
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QLabel *label_3;
+    QLabel *label_8;
     QLabel *label_2;
-    QTextBrowser *textBrowser;
+    QLabel *label_6;
     QFrame *frame;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QLabel *label_4;
+    QLabel *label_7;
+    QLabel *label_5;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_6;
@@ -86,13 +89,20 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label = new QLabel(frame_3);
         label->setObjectName(QString::fromUtf8("label"));
+        label->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Segoe UI\";"));
 
         verticalLayout->addWidget(label);
 
         label_3 = new QLabel(frame_3);
         label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setStyleSheet(QString::fromUtf8("font: italic 14pt \"Segoe UI\";"));
 
         verticalLayout->addWidget(label_3);
+
+        label_8 = new QLabel(frame_3);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        verticalLayout->addWidget(label_8);
 
 
         horizontalLayout_3->addWidget(frame_3);
@@ -105,10 +115,10 @@ public:
 
         verticalLayout_3->addWidget(widget_2);
 
-        textBrowser = new QTextBrowser(widget);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        label_6 = new QLabel(widget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
 
-        verticalLayout_3->addWidget(textBrowser);
+        verticalLayout_3->addWidget(label_6);
 
         frame = new QFrame(widget);
         frame->setObjectName(QString::fromUtf8("frame"));
@@ -143,6 +153,21 @@ public:
 
 
         verticalLayout_3->addWidget(frame);
+
+        label_4 = new QLabel(widget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        verticalLayout_3->addWidget(label_4);
+
+        label_7 = new QLabel(widget);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        verticalLayout_3->addWidget(label_7);
+
+        label_5 = new QLabel(widget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        verticalLayout_3->addWidget(label_5);
 
         frame_2 = new QFrame(widget);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
@@ -195,11 +220,16 @@ public:
         Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
         label->setText(QCoreApplication::translate("Form", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", nullptr));
         label_3->setText(QCoreApplication::translate("Form", "Eatable", nullptr));
+        label_8->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
         label_2->setText(QCoreApplication::translate("Form", "Image", nullptr));
+        label_6->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
         pushButton->setText(QString());
         pushButton_2->setText(QString());
         pushButton_3->setText(QString());
         pushButton_4->setText(QString());
+        label_4->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
+        label_7->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
+        label_5->setText(QCoreApplication::translate("Form", "TextLabel", nullptr));
         pushButton_6->setText(QString());
         pushButton_5->setText(QString());
         pushButton_7->setText(QString());

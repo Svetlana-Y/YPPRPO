@@ -52,6 +52,9 @@
                <layout class="QVBoxLayout" name="verticalLayout">
                 <item>
                  <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 14pt &quot;Segoe UI&quot;;</string>
+                  </property>
                   <property name="text">
                    <string>Название</string>
                   </property>
@@ -59,8 +62,18 @@
                 </item>
                 <item>
                  <widget class="QLabel" name="label_3">
+                  <property name="styleSheet">
+                   <string notr="true">font: italic 14pt &quot;Segoe UI&quot;;</string>
+                  </property>
                   <property name="text">
                    <string>Eatable</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>TextLabel</string>
                   </property>
                  </widget>
                 </item>
@@ -78,7 +91,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextBrowser" name="textBrowser"/>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QFrame" name="frame">
@@ -133,6 +150,27 @@
               </widget>
              </item>
             </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
            </widget>
           </item>
           <item>

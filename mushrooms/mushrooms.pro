@@ -11,6 +11,7 @@ CONFIG += c++17
 
 SOURCES += \
     big_image.cpp \
+    create_database.cpp \
     form.cpp \
     main.cpp \
     mainwindow.cpp

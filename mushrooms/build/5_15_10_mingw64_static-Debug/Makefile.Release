@@ -53,7 +53,7 @@ OBJECTS_DIR   = release
 SOURCES       = ..\..\big_image.cpp \
 		..\..\form.cpp \
 		..\..\main.cpp \
-		..\..\mainwindow.cpp C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp \
+		..\..\mainwindow.cpp C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp \
 		release\qrc_resource.cpp \
 		release\moc_big_image.cpp \
 		release\moc_form.cpp \
@@ -99,7 +99,7 @@ clean: compiler_clean
 	-$(DEL_FILE) release\big_image.o release\form.o release\main.o release\mainwindow.o release\mushrooms_plugin_import.o release\qrc_resource.o release\moc_big_image.o release\moc_form.o release\moc_mainwindow.o
 
 distclean: clean 
-	-$(DEL_FILE) C:\Users\Svetlana\QT\mushrooms\mushrooms\build\5_15_10_mingw64_static-Debug\mushrooms_plugin_import.cpp .qmake.stash
+	-$(DEL_FILE) C:\Fuck\YPPRPO\mushrooms\build\5_15_10_mingw64_static-Debug\mushrooms_plugin_import.cpp .qmake.stash
 	-$(DEL_FILE) $(DESTDIR_TARGET)
 	-$(DEL_FILE) Makefile.Release
 
@@ -537,7 +537,7 @@ release/moc_big_image.cpp: ../../big_image.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		release/moc_predefs.h \
 		C:/msys64/mingw64/qt5-static/bin/moc.exe
-	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Users/Svetlana/QT/mushrooms/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\big_image.h -o release\moc_big_image.cpp
+	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Fuck/YPPRPO/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\big_image.h -o release\moc_big_image.cpp
 
 release/moc_form.cpp: ../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
@@ -649,7 +649,7 @@ release/moc_form.cpp: ../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qtsql-config.h \
 		release/moc_predefs.h \
 		C:/msys64/mingw64/qt5-static/bin/moc.exe
-	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Users/Svetlana/QT/mushrooms/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\form.h -o release\moc_form.cpp
+	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Fuck/YPPRPO/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\form.h -o release\moc_form.cpp
 
 release/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QMainWindow \
@@ -758,8 +758,8 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
-		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
@@ -767,7 +767,7 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		../../big_image.h \
 		release/moc_predefs.h \
 		C:/msys64/mingw64/qt5-static/bin/moc.exe
-	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Users/Svetlana/QT/mushrooms/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\msys64\mingw64\qt5-static\bin\moc.exe $(DEFINES) --include C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/release/moc_predefs.h -IC:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win32-g++ -IC:/Fuck/YPPRPO/mushrooms -IC:/msys64/mingw64/qt5-static/include -IC:/msys64/mingw64/qt5-static/include/QtWidgets -IC:/msys64/mingw64/qt5-static/include/QtGui -IC:/msys64/mingw64/qt5-static/include/QtSql -IC:/msys64/mingw64/qt5-static/include/QtCore -I. -IC:/msys64/mingw64/include/c++/14.1.0 -IC:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/14.1.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed ..\..\mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1153,8 +1153,8 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
-		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
@@ -1276,8 +1276,8 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qtouchdevice.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabwidget.h \
 		C:/msys64/mingw64/qt5-static/include/QtGui/qicon.h \
-		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QWidget \
+		../../form.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/QSqlDatabase \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldatabase.h \
 		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlglobal.h \
@@ -1305,14 +1305,180 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QPushButton \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qpushbutton.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractbutton.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QRadioButton \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qradiobutton.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QScrollArea \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qscrollarea.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractscrollarea.h \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QSpacerItem \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/QStackedWidget \
 		C:/msys64/mingw64/qt5-static/include/QtWidgets/qstackedwidget.h \
-		C:/msys64/mingw64/qt5-static/include/QtWidgets/QVBoxLayout
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QVBoxLayout \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/QMessageBox \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qmessagebox.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qdialog.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QPropertyAnimation \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qpropertyanimation.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qvariantanimation.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qeasingcurve.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstractanimation.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QTimer \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtimer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qbasictimer.h \
+		../../create_database.cpp \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QCoreApplication \
+		C:/msys64/mingw64/qt5-static/include/QtSql/QtSql \
+		C:/msys64/mingw64/qt5-static/include/QtSql/QtSqlDepends \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QtCore \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QtCoreDepends \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstracteventdispatcher.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstractitemmodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstractnativeeventfilter.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstractproxymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstractstate.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qabstracttransition.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qanimationgroup.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qarraydataops.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qarraydatapointer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qbitarray.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qbuffer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qbytearraymatcher.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcache.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcalendar.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborarray.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborvalue.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qdatetime.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborcommon.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qregularexpression.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/quuid.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcbormap.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborstream.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborstreamreader.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfloat16.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcborstreamwriter.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcollator.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcommandlineoption.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcommandlineparser.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qconcatenatetablesproxymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qcryptographichash.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qdeadlinetimer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qelapsedtimer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qdir.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfileinfo.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qdiriterator.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qendian.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qeventtransition.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qexception.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfactoryinterface.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfileselector.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QObject \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QStringList \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfilesystemwatcher.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfinalstate.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfuture.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfutureinterface.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qrunnable.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qresultstore.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfuturesynchronizer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qfuturewatcher.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qhistorystate.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qidentityproxymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qisenum.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qitemselectionmodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qjsonarray.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qjsonvalue.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qjsondocument.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qjsonobject.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qlibrary.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qlibraryinfo.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qversionnumber.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qlinkedlist.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qlockfile.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qloggingcategory.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmath.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmessageauthenticationcode.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmetaobject.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmimedata.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmimedatabase.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qmimetype.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qobjectcleanuphandler.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qoperatingsystemversion.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qparallelanimationgroup.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qpauseanimation.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qplugin.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qpointer.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qpluginloader.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qprocess.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qqueue.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qrandom.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qreadwritelock.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qresource.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsavefile.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qscopedvaluerollback.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qscopeguard.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsemaphore.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsequentialanimationgroup.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsettings.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsharedmemory.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsignalmapper.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsignaltransition.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsocketnotifier.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsortfilterproxymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstack.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstandardpaths.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstate.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstatemachine.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstorageinfo.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qstringlistmodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qsystemsemaphore.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtemporarydir.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtemporaryfile.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtextboundaryfinder.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtextcodec.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qthread.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qthreadpool.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qthreadstorage.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtimeline.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtimezone.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtranslator.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtransposeproxymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtypetraits.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qwaitcondition.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QDeadlineTimer \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qwineventnotifier.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qxmlstream.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/qtcoreversion.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldriver.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqldriverplugin.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlerror.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlfield.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlindex.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlrecord.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlquery.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlquerymodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlrelationaldelegate.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qitemdelegate.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractitemdelegate.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qstyleoption.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractspinbox.h \
+		C:/msys64/mingw64/qt5-static/include/QtGui/qvalidator.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qslider.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractslider.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qstyle.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qtabbar.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qrubberband.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qlistview.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qabstractitemview.h \
+		C:/msys64/mingw64/qt5-static/include/QtWidgets/qcombobox.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlrelationaltablemodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqltablemodel.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qsqlresult.h \
+		C:/msys64/mingw64/qt5-static/include/QtSql/qtsqlversion.h \
+		C:/msys64/mingw64/qt5-static/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
-release/mushrooms_plugin_import.o: C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mushrooms_plugin_import.o C:/Users/Svetlana/QT/mushrooms/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp
+release/mushrooms_plugin_import.o: C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mushrooms_plugin_import.o C:/Fuck/YPPRPO/mushrooms/build/5_15_10_mingw64_static-Debug/mushrooms_plugin_import.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_resource.o release\qrc_resource.cpp

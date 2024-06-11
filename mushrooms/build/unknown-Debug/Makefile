@@ -364,11 +364,14 @@ Makefile: ../../mushrooms.pro C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/win
 		C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qtiff.prl \
 		C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qwbmp.prl \
 		C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qwebp.prl \
+		C:/msys64/mingw64/qt5-static/share/qt5/plugins/sqldrivers/qsqlite.prl \
 		C:/msys64/mingw64/qt5-static/lib/Qt5Widgets.prl \
 		C:/msys64/mingw64/qt5-static/lib/Qt5Gui.prl \
+		C:/msys64/mingw64/qt5-static/lib/Qt5Sql.prl \
 		C:/msys64/mingw64/qt5-static/lib/Qt5Core.prl \
 		C:/msys64/mingw64/qt5-static/lib/qtmain.prl \
-		C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/features/build_pass.prf
+		C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/features/build_pass.prf \
+		../../resource.qrc
 	$(QMAKE) -o Makefile ..\..\mushrooms.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/features/spec_pre.prf:
 C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/qdevice.pri:
@@ -664,11 +667,14 @@ C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qtga.prl:
 C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qtiff.prl:
 C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qwbmp.prl:
 C:/msys64/mingw64/qt5-static/share/qt5/plugins/imageformats/qwebp.prl:
+C:/msys64/mingw64/qt5-static/share/qt5/plugins/sqldrivers/qsqlite.prl:
 C:/msys64/mingw64/qt5-static/lib/Qt5Widgets.prl:
 C:/msys64/mingw64/qt5-static/lib/Qt5Gui.prl:
+C:/msys64/mingw64/qt5-static/lib/Qt5Sql.prl:
 C:/msys64/mingw64/qt5-static/lib/Qt5Core.prl:
 C:/msys64/mingw64/qt5-static/lib/qtmain.prl:
 C:/msys64/mingw64/qt5-static/share/qt5/mkspecs/features/build_pass.prf:
+../../resource.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\mushrooms.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 
@@ -679,7 +685,7 @@ all: debug-all release-all  FORCE
 clean: debug-clean release-clean  FORCE
 distclean: debug-distclean release-distclean  FORCE
 	-$(DEL_FILE) Makefile
-	-$(DEL_FILE) C:\Users\Svetlana\QT\mushrooms\mushrooms\build\unknown-Debug\mushrooms_plugin_import.cpp .qmake.stash
+	-$(DEL_FILE) C:\Fuck\YPPRPO\mushrooms\build\unknown-Debug\mushrooms_plugin_import.cpp .qmake.stash
 
 debug-mocclean:
 	$(MAKE) -f $(MAKEFILE).Debug mocclean
