@@ -304,4 +304,52 @@
         <file>img/white-home-50.png</file>
     </qresource>
     <qresource prefix="/images"/>
+    <qresource prefix="/src">
+        <file>src/white_milk_mushrooms/1.png</file>
+        <file>src/white_milk_mushrooms/2.png</file>
+        <file>src/white_milk_mushrooms/3.png</file>
+        <file>src/white_milk_mushrooms/4.png</file>
+        <file>src/white_milk_mushrooms/5.png</file>
+        <file>src/white_milk_mushrooms/6.png</file>
+        <file>src/white_milk_mushrooms/7.png</file>
+        <file>src/white_milk_mushrooms/8.png</file>
+        <file>src/white_milk_mushrooms/9.png</file>
+        <file>src/redheads/1.png</file>
+        <file>src/redheads/2.png</file>
+        <file>src/redheads/3.png</file>
+        <file>src/redheads/4.png</file>
+        <file>src/redheads/5.png</file>
+        <file>src/redheads/6.png</file>
+        <file>src/redheads/7.png</file>
+        <file>src/redheads/8.png</file>
+        <file>src/redheads/9.png</file>
+        <file>src/chaterelles/1.png</file>
+        <file>src/chaterelles/2.png</file>
+        <file>src/chaterelles/3.png</file>
+        <file>src/chaterelles/4.png</file>
+        <file>src/chaterelles/5.png</file>
+        <file>src/chaterelles/6.png</file>
+        <file>src/chaterelles/7.png</file>
+        <file>src/chaterelles/8.png</file>
+        <file>src/chaterelles/9.png</file>
+        <file>src/chaterelles/10.png</file>
+        <file>src/buttermilk/1.png</file>
+        <file>src/buttermilk/2.png</file>
+        <file>src/buttermilk/3.png</file>
+        <file>src/buttermilk/4.png</file>
+        <file>src/buttermilk/5.png</file>
+        <file>src/buttermilk/6.png</file>
+        <file>src/buttermilk/7.png</file>
+        <file>src/buttermilk/8.png</file>
+        <file>src/buttermilk/9.png</file>
+        <file>src/black_milk_mushrooms/1.png</file>
+        <file>src/black_milk_mushrooms/2.png</file>
+        <file>src/black_milk_mushrooms/3.png</file>
+        <file>src/black_milk_mushrooms/4.png</file>
+        <file>src/black_milk_mushrooms/5.png</file>
+        <file>src/black_milk_mushrooms/6.png</file>
+        <file>src/black_milk_mushrooms/7.png</file>
+        <file>src/black_milk_mushrooms/8.png</file>
+        <file>src/black_milk_mushrooms/9.png</file>
+    </qresource>
 </RCC>

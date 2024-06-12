@@ -22,10 +22,14 @@ public:
 
     void turnOffLeftWidgetButton();
 
-    bool visibleCenterMenuContainer = false;
+    bool visibleCenterMenuContainer = false, fullScreen = false;
 
     int opacity;
 
+    QSqlDatabase db;
+
+    QList <QString> listLabel;
+    QList <QString> listImage;
 
 private slots:
     void on_catalogBtn_clicked();
@@ -46,6 +50,12 @@ private slots:
     void on_menuBtn_clicked();
 
     void on_setBtn_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_restoreBtn_clicked();
 
 private:
     Ui::MainWindow *ui;
