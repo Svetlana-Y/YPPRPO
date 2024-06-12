@@ -57,7 +57,7 @@ void insertData() {
     QSqlQuery query;
     query.prepare("INSERT INTO Rus (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("chaterelles");
+    query.addBindValue("chanterelles");
     query.addBindValue("Лисичка");
     query.addBindValue(true);
     query.addBindValue("Лисичка — гриб с самой яркой и запоминающейся внешностью."
@@ -94,7 +94,7 @@ void insertData() {
 
     query.prepare("INSERT INTO Eng (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("chaterelles");
+    query.addBindValue("chanterelles");
     query.addBindValue("Chaterelle");
     query.addBindValue(true);
     query.addBindValue("The chanterelle is a mushroom with the most striking and memorable appearance."
@@ -128,9 +128,11 @@ void insertData() {
         qDebug() << "Error: cannot insert data.";
         return;
     }
+
+
     query.prepare("INSERT INTO Rus (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("black_milk_mushrooms");
+    query.addBindValue("black-milk-mushroomss");
     query.addBindValue("Черный груздь");
     query.addBindValue(true);
     query.addBindValue("Черный груздь – гриб с характерной воронковидной шляпкой "
@@ -162,7 +164,7 @@ void insertData() {
 
     query.prepare("INSERT INTO Eng (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("black_milk_mushrooms");
+    query.addBindValue("black-milk-mushroomss");
     query.addBindValue("Black milk mushroom");
     query.addBindValue(true);
     query.addBindValue("Black milk mushroom is a mushroom with a characteristic funnel-shaped cap "
@@ -194,7 +196,7 @@ void insertData() {
 
     query.prepare("INSERT INTO Rus (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("white_milk_mushrooms");
+    query.addBindValue("white-milk-mushrooms");
     query.addBindValue("Белый груздь");
     query.addBindValue(true);
     query.addBindValue("Белый груздь — высоко ценимый съедобный гриб. Отличается крупной, "
@@ -231,7 +233,7 @@ void insertData() {
 
     query.prepare("INSERT INTO Eng (English_Name, Name, Edeble, Description, Description2, Lie_Name, Lie_Edeble, Lie_Description) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    query.addBindValue("white_milk_mushrooms");
+    query.addBindValue("white-milk-mushrooms");
     query.addBindValue("White milk mushroom");
     query.addBindValue(true);
     query.addBindValue("White mushroom is a highly valued edible mushroom. It is distinguished by its large size, "

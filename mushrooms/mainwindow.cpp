@@ -5,15 +5,27 @@
 #include <QWidget>
 #include <QTimer>
 #include <QString>
+#include <QPixmap>
 #include <QFileInfo>
 #include <QtSql>
 #include <QList>
 #include <QSqlDatabase>
 #include <QSqlQuery>
 
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <regex>
+#include <cstdio>
+
+using namespace std;
+
 #include "create_database.cpp"
 
 QString photo1;
+QString path = "";
 QString language="Eng";
 
 MainWindow::MainWindow(QWidget *parent)
@@ -73,13 +85,13 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     ui->image1Btn->setFixedSize(200, 200);
-    ui->image1Btn->setStyleSheet("#image1Btn {border-image: url(:/src/src/black_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image1Btn->setStyleSheet("#image1Btn {border-image: url(:/src/src/black-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image2Btn->setFixedSize(200, 200);
-    ui->image2Btn->setStyleSheet("#image2Btn {border-image: url(:/src/src/black_milk_mushrooms/2.png) 0 0 0 0 stretch stretch;"
+    ui->image2Btn->setStyleSheet("#image2Btn {border-image: url(:/src/src/black-milk-mushrooms/2.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image3Btn->setFixedSize(200, 200);
-    ui->image3Btn->setStyleSheet("#image3Btn {border-image: url(:/src/src/white_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image3Btn->setStyleSheet("#image3Btn {border-image: url(:/src/src/white-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image4Btn->setFixedSize(200, 200);
     ui->image4Btn->setStyleSheet("#image4Btn {border-image: url(:/src/src/buttermilk/1.png) 0 0 0 0 stretch stretch;"
@@ -89,13 +101,13 @@ MainWindow::MainWindow(QWidget *parent)
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
 
     ui->image6Btn->setFixedSize(200, 200);
-    ui->image6Btn->setStyleSheet("#image6Btn {border-image: url(:/src/src/black_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image6Btn->setStyleSheet("#image6Btn {border-image: url(:/src/src/black-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image7Btn->setFixedSize(200, 200);
-    ui->image7Btn->setStyleSheet("#image7Btn {border-image: url(:/src/src/black_milk_mushrooms/2.png) 0 0 0 0 stretch stretch;"
+    ui->image7Btn->setStyleSheet("#image7Btn {border-image: url(:/src/src/black-milk-mushrooms/2.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image8Btn->setFixedSize(200, 200);
-    ui->image8Btn->setStyleSheet("#image8Btn {border-image: url(:/src/src/white_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image8Btn->setStyleSheet("#image8Btn {border-image: url(:/src/src/white-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                  "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image9Btn->setFixedSize(200, 200);
     ui->image9Btn->setStyleSheet("#image9Btn {border-image: url(:/src/src/buttermilk/1.png) 0 0 0 0 stretch stretch;"
@@ -105,13 +117,13 @@ MainWindow::MainWindow(QWidget *parent)
                                   "border: 2px solid #1f232a; border-radius: 20px;}");
 
     ui->image11Btn->setFixedSize(200, 200);
-    ui->image11Btn->setStyleSheet("#image11Btn {border-image: url(:/src/src/black_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image11Btn->setStyleSheet("#image11Btn {border-image: url(:/src/src/black-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                   "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image12Btn->setFixedSize(200, 200);
-    ui->image12Btn->setStyleSheet("#image12Btn {border-image: url(:/src/src/black_milk_mushrooms/2.png) 0 0 0 0 stretch stretch;"
+    ui->image12Btn->setStyleSheet("#image12Btn {border-image: url(:/src/src/black-milk-mushrooms/2.png) 0 0 0 0 stretch stretch;"
                                   "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image13Btn->setFixedSize(200, 200);
-    ui->image13Btn->setStyleSheet("#image13Btn {border-image: url(:/src/src/white_milk_mushrooms/1.png) 0 0 0 0 stretch stretch;"
+    ui->image13Btn->setStyleSheet("#image13Btn {border-image: url(:/src/src/white-milk-mushrooms/1.png) 0 0 0 0 stretch stretch;"
                                   "border: 2px solid #1f232a; border-radius: 20px;}");
     ui->image14Btn->setFixedSize(200, 200);
     ui->image14Btn->setStyleSheet("#image14Btn {border-image: url(:/src/src/buttermilk/1.png) 0 0 0 0 stretch stretch;"
@@ -188,15 +200,78 @@ void MainWindow::on_helpBtn_clicked()
 void MainWindow::on_searchBtn_clicked()
 {
 
+
+    const char *cmd = (QString("cmd.exe /C \""
+                            "myenv\\Scripts\\activate && "
+                            "python ..\\..\\src\\detect.py --image_path %1"
+                            "\"").arg(path)).toUtf8().data();
+
+    FILE *fp = popen(cmd, "r");
+    if (!fp)
+    {
+        cerr << "Не удалось запустить команду." << endl;
+        return;
+    }
+
+
+    char line[10240];
+    string output;
+    while (fgets(line, sizeof(line), fp))
+    {
+
+        output += line;
+    }
+    pclose(fp);
+
+    QString results_path1 = QString::fromStdString(output);
+    qDebug() << results_path1;
+    QStringList labels = (results_path1.split("640x640"))[1].split(",");
+    qDebug() << labels;
+    QStringList res = results_path1.split("predict");
+    QString results_index = (res[1]).split("\u001B[0m\n")[0];
+    QPixmap pixmap1(QString("runs\\detect\\predict%1\\%2").arg(results_index, path.split("/").last()));
+    QPixmap scaledPixmap = pixmap1.scaled(ui->label_10->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    ui->label_10->setPixmap(scaledPixmap);
+
+
+    // Создать виджет прокрутки
+    QWidget* scrollWidget = new QWidget;
+    ui->scrollArea_2->setWidget(scrollWidget);
+
+    // Настроить макет виджета прокрутки
+    QVBoxLayout* layout = new QVBoxLayout;
+    scrollWidget->setLayout(layout);
+
+    // Создать и добавить кнопки для каждого элемента списка
+    int index = 0;
+    for (QString item : labels) {
+        qDebug() << item.split(" ");
+        if (item.split(" ").length() != 3) break;
+        QString one_mushroom = (item.split(" ")[2]);
+        if (item.split(" ")[2] != "1")one_mushroom.chop(1);
+        QPushButton* button = new QPushButton(one_mushroom);
+        button->setObjectName(QString("button%1").arg(index++));
+        layout->addWidget(button);
+        connect(button, &QPushButton::clicked, this, &MainWindow::onButtonClicked);
+
+    }
+
     createDatabase("mashrooms2.db");
     insertData();
 
-    Form *form = new Form;
-    QString myMessage = "chaterelles";
-    form->setMessage(myMessage);
-    form->show();
 }
 
+void MainWindow::onButtonClicked()
+{
+    QPushButton *button = qobject_cast<QPushButton *>(sender());
+    if (button) {
+        qDebug() << "Button clicked: " << button->text();
+    }
+    Form *form = new Form;
+    form->setMessage(button->text());
+    form->show();
+
+}
 
 
 
@@ -252,6 +327,8 @@ void MainWindow::on_setBtn_clicked()
         ui->label_10->setText("Главная");
         ui->label_12->setText("Особенности");
         ui->label_13->setText("Изменить язык");
+        ui->pushButton_2->setText("Выбрать файл");
+
 
         ui->homeBtn->setText("Главная");
         ui->catalogBtn->setText("Каталог");
@@ -263,6 +340,7 @@ void MainWindow::on_setBtn_clicked()
         ui->setBtn->setText("Установить");
         ui->russiaSettingBtn->setText("Русский");
         ui->englishSettingBtn->setText("Английский");
+        ui->pushButton_2->setText("Select a file");
     }
     else{
         language = "Eng";
@@ -312,5 +390,14 @@ void MainWindow::on_restoreBtn_clicked()
         fullScreen = false;
         this->setWindowState(Qt::WindowState());
     }
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+    path = QFileDialog::getOpenFileName(this, "Выбрать файл", "..\\..\\",
+                                        "All Files (*.*);; JPEG Image (*.jpg);; PNG Image (*.png);");
+    ui->label_11->setText(path);
 }
 

@@ -195,6 +195,7 @@
         <file>img/plus.svg</file>
         <file>img/plus-circle.svg</file>
         <file>img/plus-square.svg</file>
+        <file>img/pngwing.com.png</file>
         <file>img/pocket.svg</file>
         <file>img/power.svg</file>
         <file>img/printer.svg</file>
@@ -275,6 +276,20 @@
         <file>img/volume-2.svg</file>
         <file>img/volume-x.svg</file>
         <file>img/watch.svg</file>
+        <file>img/white-align-justify.png</file>
+        <file>img/white-book.png</file>
+        <file>img/white-circled-x.png</file>
+        <file>img/white-cross.png</file>
+        <file>img/white-eye.png</file>
+        <file>img/white-home.svg</file>
+        <file>img/white-home-50.png</file>
+        <file>img/white-info.png</file>
+        <file>img/white-more.png</file>
+        <file>img/white-person.png</file>
+        <file>img/white-question.png</file>
+        <file>img/white-setting.png</file>
+        <file>img/white-square.png</file>
+        <file>img/white-subtract.png</file>
         <file>img/wifi.svg</file>
         <file>img/wifi-off.svg</file>
         <file>img/wind.svg</file>
@@ -287,52 +302,17 @@
         <file>img/zap-off.svg</file>
         <file>img/zoom-in.svg</file>
         <file>img/zoom-out.svg</file>
-        <file>img/pngwing.com.png</file>
-        <file>img/white-align-justify.png</file>
-        <file>img/white-book.png</file>
-        <file>img/white-cross.png</file>
-        <file>img/white-eye.png</file>
-        <file>img/white-home.svg</file>
-        <file>img/white-info.png</file>
-        <file>img/white-more.png</file>
-        <file>img/white-person.png</file>
-        <file>img/white-question.png</file>
-        <file>img/white-setting.png</file>
-        <file>img/white-square.png</file>
-        <file>img/white-subtract.png</file>
-        <file>img/white-circled-x.png</file>
-        <file>img/white-home-50.png</file>
     </qresource>
-    <qresource prefix="/images"/>
     <qresource prefix="/src">
-        <file>src/white_milk_mushrooms/1.png</file>
-        <file>src/white_milk_mushrooms/2.png</file>
-        <file>src/white_milk_mushrooms/3.png</file>
-        <file>src/white_milk_mushrooms/4.png</file>
-        <file>src/white_milk_mushrooms/5.png</file>
-        <file>src/white_milk_mushrooms/6.png</file>
-        <file>src/white_milk_mushrooms/7.png</file>
-        <file>src/white_milk_mushrooms/8.png</file>
-        <file>src/white_milk_mushrooms/9.png</file>
-        <file>src/redheads/1.png</file>
-        <file>src/redheads/2.png</file>
-        <file>src/redheads/3.png</file>
-        <file>src/redheads/4.png</file>
-        <file>src/redheads/5.png</file>
-        <file>src/redheads/6.png</file>
-        <file>src/redheads/7.png</file>
-        <file>src/redheads/8.png</file>
-        <file>src/redheads/9.png</file>
-        <file>src/chaterelles/1.png</file>
-        <file>src/chaterelles/2.png</file>
-        <file>src/chaterelles/3.png</file>
-        <file>src/chaterelles/4.png</file>
-        <file>src/chaterelles/5.png</file>
-        <file>src/chaterelles/6.png</file>
-        <file>src/chaterelles/7.png</file>
-        <file>src/chaterelles/8.png</file>
-        <file>src/chaterelles/9.png</file>
-        <file>src/chaterelles/10.png</file>
+        <file>src/black-milk-mushrooms/1.png</file>
+        <file>src/black-milk-mushrooms/2.png</file>
+        <file>src/black-milk-mushrooms/3.png</file>
+        <file>src/black-milk-mushrooms/4.png</file>
+        <file>src/black-milk-mushrooms/5.png</file>
+        <file>src/black-milk-mushrooms/6.png</file>
+        <file>src/black-milk-mushrooms/7.png</file>
+        <file>src/black-milk-mushrooms/8.png</file>
+        <file>src/black-milk-mushrooms/9.png</file>
         <file>src/buttermilk/1.png</file>
         <file>src/buttermilk/2.png</file>
         <file>src/buttermilk/3.png</file>
@@ -342,14 +322,35 @@
         <file>src/buttermilk/7.png</file>
         <file>src/buttermilk/8.png</file>
         <file>src/buttermilk/9.png</file>
-        <file>src/black_milk_mushrooms/1.png</file>
-        <file>src/black_milk_mushrooms/2.png</file>
-        <file>src/black_milk_mushrooms/3.png</file>
-        <file>src/black_milk_mushrooms/4.png</file>
-        <file>src/black_milk_mushrooms/5.png</file>
-        <file>src/black_milk_mushrooms/6.png</file>
-        <file>src/black_milk_mushrooms/7.png</file>
-        <file>src/black_milk_mushrooms/8.png</file>
-        <file>src/black_milk_mushrooms/9.png</file>
+        <file>src/redheads/1.png</file>
+        <file>src/redheads/2.png</file>
+        <file>src/redheads/3.png</file>
+        <file>src/redheads/4.png</file>
+        <file>src/redheads/5.png</file>
+        <file>src/redheads/6.png</file>
+        <file>src/redheads/7.png</file>
+        <file>src/redheads/8.png</file>
+        <file>src/redheads/9.png</file>
+        <file>src/white_milk_mushrooms/1.png</file>
+        <file>src/white_milk_mushrooms/2.png</file>
+        <file>src/white_milk_mushrooms/3.png</file>
+        <file>src/white_milk_mushrooms/4.png</file>
+        <file>src/white_milk_mushrooms/5.png</file>
+        <file>src/white_milk_mushrooms/6.png</file>
+        <file>src/white_milk_mushrooms/7.png</file>
+        <file>src/white_milk_mushrooms/8.png</file>
+        <file>src/white_milk_mushrooms/9.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>src/chanterelles/1.png</file>
+        <file>src/chanterelles/2.png</file>
+        <file>src/chanterelles/3.png</file>
+        <file>src/chanterelles/4.png</file>
+        <file>src/chanterelles/5.png</file>
+        <file>src/chanterelles/6.png</file>
+        <file>src/chanterelles/7.png</file>
+        <file>src/chanterelles/8.png</file>
+        <file>src/chanterelles/9.png</file>
+        <file>src/chanterelles/10.png</file>
     </qresource>
 </RCC>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1274</width>
-    <height>671</height>
+    <height>765</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,7 +68,7 @@
     <property name="bottomMargin">
      <number>0</number>
     </property>
-    <item alignment="Qt::AlignHCenter">
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
      <widget class="QWidget" name="leftMenuContainer" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
@@ -86,7 +86,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignHCenter">
+       <item alignment="Qt::AlignmentFlag::AlignHCenter">
         <widget class="QWidget" name="leftMenuSubContainer" native="true">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -110,7 +110,7 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame">
             <property name="styleSheet">
              <string notr="true">QPushButton{
@@ -120,10 +120,10 @@
 </string>
             </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <property name="spacing">
@@ -141,7 +141,7 @@
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="menuBtn">
                <property name="toolTip">
                 <string>Menu</string>
@@ -157,7 +157,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-align-justify.png</normaloff>:/resource/img/white-align-justify.png</iconset>
                </property>
                <property name="iconSize">
@@ -171,7 +171,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame_2">
             <property name="enabled">
              <bool>true</bool>
@@ -189,10 +189,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
 }</string>
             </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <property name="spacing">
@@ -210,7 +210,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
              <property name="bottomMargin">
               <number>10</number>
              </property>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="homeBtn">
                <property name="toolTip">
                 <string>Home</string>
@@ -223,7 +223,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string> Home</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-home-50.png</normaloff>:/resource/img/white-home-50.png</iconset>
                </property>
                <property name="iconSize">
@@ -234,7 +234,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="catalogBtn">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -252,7 +252,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string> Сatalog</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-book.png</normaloff>:/resource/img/white-book.png</iconset>
                </property>
                <property name="iconSize">
@@ -263,7 +263,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="featuresBtn">
                <property name="toolTip">
                 <string>Features</string>
@@ -276,7 +276,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string>  Features</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-eye.png</normaloff>:/resource/img/white-eye.png</iconset>
                </property>
                <property name="iconSize">
@@ -293,10 +293,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
           <item>
            <spacer name="verticalSpacer">
             <property name="orientation">
-             <enum>Qt::Vertical</enum>
+             <enum>Qt::Orientation::Vertical</enum>
             </property>
             <property name="sizeType">
-             <enum>QSizePolicy::Minimum</enum>
+             <enum>QSizePolicy::Policy::Minimum</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -306,7 +306,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </property>
            </spacer>
           </item>
-          <item alignment="Qt::AlignBottom">
+          <item alignment="Qt::AlignmentFlag::AlignBottom">
            <widget class="QFrame" name="frame_3">
             <property name="enabled">
              <bool>true</bool>
@@ -318,10 +318,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
 }</string>
             </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_4">
              <property name="spacing">
@@ -339,7 +339,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
              <property name="bottomMargin">
               <number>10</number>
              </property>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="settingsBtn">
                <property name="toolTip">
                 <string>Settings</string>
@@ -351,7 +351,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string> Settings</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-setting.png</normaloff>:/resource/img/white-setting.png</iconset>
                </property>
                <property name="iconSize">
@@ -362,7 +362,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="infoBtn">
                <property name="toolTip">
                 <string>Information</string>
@@ -374,7 +374,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string>  Information</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-info.png</normaloff>:/resource/img/white-info.png</iconset>
                </property>
                <property name="iconSize">
@@ -385,7 +385,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item alignment="Qt::AlignmentFlag::AlignLeft">
               <widget class="QPushButton" name="helpBtn">
                <property name="toolTip">
                 <string>Help</string>
@@ -397,7 +397,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string>  Help</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-question.png</normaloff>:/resource/img/white-question.png</iconset>
                </property>
                <property name="iconSize">
@@ -417,7 +417,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
       </layout>
      </widget>
     </item>
-    <item alignment="Qt::AlignLeft">
+    <item alignment="Qt::AlignmentFlag::AlignLeft">
      <widget class="QWidget" name="centerMenuContainer" native="true">
       <property name="enabled">
        <bool>true</bool>
@@ -462,7 +462,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
           <property name="bottomMargin">
            <number>5</number>
           </property>
-          <item alignment="Qt::AlignTop">
+          <item alignment="Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame_4">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -471,10 +471,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
              </sizepolicy>
             </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
@@ -483,11 +483,11 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string>Menu</string>
                </property>
                <property name="alignment">
-                <set>Qt::AlignCenter</set>
+                <set>Qt::AlignmentFlag::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight">
+             <item alignment="Qt::AlignmentFlag::AlignRight">
               <widget class="QPushButton" name="pushButton">
                <property name="toolTip">
                 <string>Close Menu</string>
@@ -499,7 +499,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-circled-x.png</normaloff>:/resource/img/white-circled-x.png</iconset>
                </property>
                <property name="iconSize">
@@ -520,7 +520,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </property>
             <widget class="QWidget" name="page">
              <layout class="QVBoxLayout" name="verticalLayout_7">
-              <item alignment="Qt::AlignTop">
+              <item alignment="Qt::AlignmentFlag::AlignTop">
                <widget class="QFrame" name="frame_9">
                 <property name="styleSheet">
                  <string notr="true">#frame_9 {
@@ -530,10 +530,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
 }</string>
                 </property>
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::Shape::StyledPanel</enum>
                 </property>
                 <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
+                 <enum>QFrame::Shadow::Raised</enum>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_19">
                  <property name="spacing">
@@ -560,13 +560,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                     </sizepolicy>
                    </property>
                    <property name="layoutDirection">
-                    <enum>Qt::LeftToRight</enum>
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
                    </property>
                    <property name="text">
                     <string>Change language</string>
                    </property>
                    <property name="alignment">
-                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -610,7 +610,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                  <string>Settings</string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
@@ -649,7 +649,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                  <string>Information</string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
@@ -668,7 +668,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                  <string>Help</string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
                 </property>
                </widget>
               </item>
@@ -732,13 +732,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
           <property name="bottomMargin">
            <number>3</number>
           </property>
-          <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+          <item alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter">
            <widget class="QFrame" name="frame_5">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <property name="spacing">
@@ -773,13 +773,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="pixmap">
-                <pixmap resource="resource.qrc">:/resource/img/pngwing.com.png</pixmap>
+                <pixmap resource="resources.qrc">:/resource/img/pngwing.com.png</pixmap>
                </property>
                <property name="scaledContents">
                 <bool>true</bool>
                </property>
                <property name="alignment">
-                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
                </property>
                <property name="margin">
                 <number>0</number>
@@ -802,13 +802,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
            <widget class="QFrame" name="frame_6">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_6">
              <property name="spacing">
@@ -835,7 +835,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-more.png</normaloff>:/resource/img/white-more.png</iconset>
                </property>
                <property name="iconSize">
@@ -855,7 +855,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-person.png</normaloff>:/resource/img/white-person.png</iconset>
                </property>
                <property name="iconSize">
@@ -869,13 +869,13 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignRight">
+          <item alignment="Qt::AlignmentFlag::AlignRight">
            <widget class="QFrame" name="frame_7">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <property name="spacing">
@@ -902,7 +902,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-subtract.png</normaloff>:/resource/img/white-subtract.png</iconset>
                </property>
                <property name="iconSize">
@@ -925,7 +925,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-square.png</normaloff>:/resource/img/white-square.png</iconset>
                </property>
                <property name="iconSize">
@@ -945,7 +945,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset resource="resources.qrc">
                  <normaloff>:/resource/img/white-cross.png</normaloff>:/resource/img/white-cross.png</iconset>
                </property>
                <property name="iconSize">
@@ -977,7 +977,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
              <item>
               <widget class="QStackedWidget" name="centerWidget">
                <property name="currentIndex">
-                <number>1</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="page_6">
                 <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -992,15 +992,64 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                     <string>Home</string>
                    </property>
                    <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
-                 <item>
-                  <widget class="QPushButton" name="searchBtn">
-                   <property name="text">
-                    <string>Search</string>
-                   </property>
+                 <item alignment="Qt::AlignmentFlag::AlignBottom">
+                  <widget class="QWidget" name="widget_21" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_36">
+                    <item>
+                     <widget class="QFrame" name="frame_10">
+                      <property name="frameShape">
+                       <enum>QFrame::Shape::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Shadow::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_15">
+                       <item>
+                        <widget class="QLabel" name="label_11">
+                         <property name="text">
+                          <string> </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_2">
+                         <property name="text">
+                          <string>Выбрать файл</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="searchBtn">
+                      <property name="text">
+                       <string>Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QScrollArea" name="scrollArea_2">
+                      <property name="widgetResizable">
+                       <bool>true</bool>
+                      </property>
+                      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>624</width>
+                         <height>73</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -1023,8 +1072,8 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                     <property name="geometry">
                      <rect>
                       <x>0</x>
-                      <y>-6</y>
-                      <width>609</width>
+                      <y>0</y>
+                      <width>364</width>
                       <height>540</height>
                      </rect>
                     </property>
@@ -1042,7 +1091,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel1">
                              <property name="font">
                               <font>
@@ -1067,7 +1116,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel2">
                              <property name="font">
                               <font>
@@ -1092,7 +1141,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel3">
                              <property name="font">
                               <font>
@@ -1128,7 +1177,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel4">
                              <property name="font">
                               <font>
@@ -1153,7 +1202,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel5">
                              <property name="font">
                               <font>
@@ -1178,7 +1227,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel6">
                              <property name="font">
                               <font>
@@ -1209,7 +1258,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel7">
                              <property name="font">
                               <font>
@@ -1234,7 +1283,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel8">
                              <property name="font">
                               <font>
@@ -1259,7 +1308,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel9">
                              <property name="font">
                               <font>
@@ -1290,7 +1339,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
                             <widget class="QLabel" name="imageLabel10">
                              <property name="font">
                               <font>
@@ -1315,7 +1364,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel11">
                              <property name="font">
                               <font>
@@ -1340,7 +1389,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel12">
                              <property name="font">
                               <font>
@@ -1371,7 +1420,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel13">
                              <property name="font">
                               <font>
@@ -1396,7 +1445,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel14">
                              <property name="font">
                               <font>
@@ -1421,7 +1470,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                              </property>
                             </widget>
                            </item>
-                           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
                             <widget class="QLabel" name="imageLabel15">
                              <property name="font">
                               <font>
@@ -1458,7 +1507,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                     <string>Features</string>
                    </property>
                    <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -1469,7 +1518,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignRight">
+          <item alignment="Qt::AlignmentFlag::AlignRight">
            <widget class="QWidget" name="rightMenuContainer" native="true">
             <property name="minimumSize">
              <size>
@@ -1520,10 +1569,10 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                 <item>
                  <widget class="QFrame" name="frame_8">
                   <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
+                   <enum>QFrame::Shape::StyledPanel</enum>
                   </property>
                   <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
+                   <enum>QFrame::Shadow::Raised</enum>
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_9">
                    <item>
@@ -1532,11 +1581,11 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                       <string> Menu</string>
                      </property>
                      <property name="alignment">
-                      <set>Qt::AlignCenter</set>
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
-                   <item alignment="Qt::AlignRight">
+                   <item alignment="Qt::AlignmentFlag::AlignRight">
                     <widget class="QPushButton" name="pushButton_7">
                      <property name="toolTip">
                       <string>Close Menu</string>
@@ -1545,7 +1594,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                       <string/>
                      </property>
                      <property name="icon">
-                      <iconset resource="resource.qrc">
+                      <iconset resource="resources.qrc">
                        <normaloff>:/resource/img/white-circled-x.png</normaloff>:/resource/img/white-circled-x.png</iconset>
                      </property>
                      <property name="iconSize">
@@ -1577,7 +1626,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                        <string>Profile</string>
                       </property>
                       <property name="alignment">
-                       <set>Qt::AlignCenter</set>
+                       <set>Qt::AlignmentFlag::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -1596,7 +1645,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
                        <string>More...</string>
                       </property>
                       <property name="alignment">
-                       <set>Qt::AlignCenter</set>
+                       <set>Qt::AlignmentFlag::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -1620,7 +1669,7 @@ QPushButton QToolTip {background-color: #1f232a;}</string>
   </widget>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

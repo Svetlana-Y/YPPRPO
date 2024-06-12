@@ -72,7 +72,7 @@ void Form::setMessage(const QString &message)
         QString lieName = query.value(5).toString();
         bool lieEdeble = query.value(6).toBool();
         QString lieDes = query.value(7).toString();
-        photo = QString("src/%1/%2.png").arg(englishName);
+        photo = QString(":/src/src/%1/%2.png").arg(englishName);
 
         qDebug() << "Record found:";
         qDebug() << "English Name:" << englishName;
@@ -85,6 +85,7 @@ void Form::setMessage(const QString &message)
         qDebug() << "Lie Description:" << lieDes;
         ui->label->setText(name);
         ui->label->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+        ui->label->setWordWrap(true);
         ui->label->setStyleSheet("font: 700 18pt \"Segoe UI\";");
         if(language == "Rus"){
             if (edeble) ui->label_3->setText("Съедобный");

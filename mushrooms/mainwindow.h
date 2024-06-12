@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFileDialog>
 #include <QWidget>
 #include <form.h>
 #include <big_image.h>
@@ -56,6 +57,10 @@ private slots:
     void on_pushButton_6_clicked();
 
     void on_restoreBtn_clicked();
+
+    void onButtonClicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
